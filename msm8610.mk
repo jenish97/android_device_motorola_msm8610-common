@@ -73,12 +73,11 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 # Audio Configuration
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/audio/audio_effects.conf:system/vendor/etc/audio_effects.conf \
     $(LOCAL_PATH)/audio/audio_policy.conf:system/etc/audio_policy.conf
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 960
-TARGET_SCREEN_WIDTH := 540
+PRODUCT_COPY_FILES += \
+    vendor/omni/prebuilt/bootanimation/res/960x640.zip:system/media/bootanimation.zip
 
 PRODUCT_PACKAGES += \
     gralloc.msm8610 \
