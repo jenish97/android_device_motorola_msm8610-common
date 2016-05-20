@@ -32,7 +32,7 @@
     </Encoders>
 
     <Decoders>
-        <MediaCodec name="OMX.qcom.video.decoder.avc" type="video/avc" />
+        <MediaCodec name="OMX.qcom.video.decoder.avc" type="video/avc" >
             <Quirk name="requires-allocate-on-input-ports" />
             <Quirk name="requires-allocate-on-output-ports"/>
         </MediaCodec>
